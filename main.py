@@ -138,7 +138,7 @@ class CipherPlugin(Star):
         args = full_text.split(maxsplit=1)
         
         if len(args) < 2:
-            yield event.plain_result("❌ 格式错误，请使用：Base64加密 明文")
+            yield event.plain_result("❌ 格式错误，请使用：Base64编码 明文")
             return
         
         _, plaintext = args
@@ -155,7 +155,7 @@ class CipherPlugin(Star):
         args = full_text.split(maxsplit=1)
         
         if len(args) < 2:
-            yield event.plain_result("❌ 格式错误，请使用：Base解密 密文")
+            yield event.plain_result("❌ 格式错误，请使用：Base解码 密文")
             return
         
         _, ciphertext = args
@@ -176,7 +176,7 @@ class CipherPlugin(Star):
         args = full_text.split(maxsplit=1)
         
         if len(args) < 2:
-            yield event.plain_result("❌ 格式错误，请使用：URL加密 明文")
+            yield event.plain_result("❌ 格式错误，请使用：URL编码 明文")
             return
         
         _, plaintext = args
@@ -195,7 +195,7 @@ class CipherPlugin(Star):
         args = full_text.split(maxsplit=1)
         
         if len(args) < 2:
-            yield event.plain_result("❌ 格式错误，请使用：URL解密 密文")
+            yield event.plain_result("❌ 格式错误，请使用：URL解码 密文")
             return
         
         _, ciphertext = args
@@ -214,7 +214,7 @@ class CipherPlugin(Star):
         args = full_text.split(maxsplit=1)
         
         if len(args) < 2:
-            yield event.plain_result("❌ 格式错误，请使用：Pun加密 明文")
+            yield event.plain_result("❌ 格式错误，请使用：Pun编码 明文")
             return
         
         _, plaintext = args
@@ -239,7 +239,7 @@ class CipherPlugin(Star):
         args = full_text.split(maxsplit=1)
         
         if len(args) < 2:
-            yield event.plain_result("❌ 格式错误，请使用：Pun解密 密文")
+            yield event.plain_result("❌ 格式错误，请使用：Pun解码 密文")
             return
         
         _, ciphertext = args
