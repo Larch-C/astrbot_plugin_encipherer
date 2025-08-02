@@ -223,7 +223,7 @@ class CipherPlugin(Star):
         args = full_text.split(maxsplit=2)
         
         if len(args) < 3:
-            yield event.plain_result("❌ 格式错误，请使用：加密3 密钥 明文内容")
+            yield event.plain_result("❌ 格式错误，请使用：魅魔语加密 密钥 明文内容")
             return
         
         _, key, plaintext = args
@@ -244,7 +244,7 @@ class CipherPlugin(Star):
         args = full_text.split(maxsplit=2)
         
         if len(args) < 3:
-            yield event.plain_result("❌ 格式错误，请使用：解密3 密钥 密文内容")
+            yield event.plain_result("❌ 格式错误，请使用：魅魔语解密 密钥 密文内容")
             return
         
         _, key, ciphertext = args
